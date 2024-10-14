@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        background-color: #b0b0d3;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 12px;
+
+        /* text-align: center; */
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: width 1s ease 3s;
+        transition: font-size 1s ease 3s;
+        transition: opacity 1s ease 3s;
+        margin-bottom: 200px;
+      }
+      .emoji {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        height: 200px;
+        align-items: center;
+      }
+      .img {
+        height: 100px;
+        width: 100px;
+      }
+
+      .box:hover {
+        cursor: pointer;
+
+        width: 350px;
+      }
+      .title {
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        color: rgb(65, 20, 200);
+
+        font-size: 35px;
+      }
+      .select {
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        height: 100vh;
+      }
+      .description {
+        margin-bottom: 10px;
+      }
+      #box1 {
+        background-color: aquamarine;
+      }
+      #box2 {
+        background-color: darkslateblue;
+      }
+      #box3 {
+        background-color: plum;
+      }
+      #box4 {
+        background-color: pink;
+      }
+      #box5 {
+        background-color: wheat;
+      }
+      #box6 {
+        background-color: lightslategrey;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="title">ASSIGNMENT 04</p>
+    <div class="container">
+      <div class="box" id="box1">
+        <img class="img" src="/asserts/images/assignment_1.jpeg" alt="" />
+
+        <a class="select" href="case1.html" target="_blank">case one</a>
+      </div>
+      <div class="box" id="box2">
+        <img class="img" src="/asserts/images/assignmrnt_2.jpeg" alt="" />
+
+        <a class="select" href="case2.html" target="_blank">case two</a>
+      </div>
+      <div class="box" id="box3">
+        <img class="img" src="/asserts/images/assingment_03.jpeg" alt="" />
+
+        <a class="select" href="case3.html" target="_blank">case three</a>
+      </div>
+      <div class="box" id="box4">
+        <img class="img" src="/asserts/images/assignment_5.webp" alt="" />
+
+        <a class="select" href="case4.html" target="_blank">case four</a>
+      </div>
+
+      <div class="box" id="box5">
+        <img class="img" src="/asserts/images/assigment+6.jpeg" alt="" />
+
+        <a class="select" href="case5.html" target="_blank">case five</a>
+      </div>
+
+      <div class="box" id="box6">
+        <img class="img" src="/asserts/images/assingment_04.jpeg" alt="" />
+
+        <a class="select" href="case6.html" target="_blank">case six</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case_06</title>
+
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+      }
+
+      .sky {
+        width: 100%;
+        height: 65%;
+        object-fit: cover;
+      }
+
+      .city-road-container {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 400%;
+        height: 35%;
+        animation: left-right 5s linear 1;
+      }
+
+      .city_image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        bottom: 35vh;
+        left: 0;
+      }
+
+      .road_image {
+        width: 100%;
+        height: 35vh;
+        object-fit: cover;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .car_image {
+        width: 25%;
+        height: auto;
+        position: fixed;
+        bottom: 21%;
+        left: 52.5%;
+        transform: translate(-50%, 0);
+      }
+
+      .wheel_image {
+        width: 5%;
+        height: auto;
+        position: fixed;
+        bottom: 21%;
+        animation: rotate 5s linear 1;
+      }
+
+      #wheel_one {
+        left: 42%;
+      }
+
+      #wheel_two {
+        left: 57.5%;
+      }
+
+      @keyframes left-right {
+        0% {
+          transform: translateX(0);
+        }
+
+        70% {
+          transform: translateX(-55%);
+        }
+
+        100% {
+          transform: translateX(-75%);
+        }
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        70% {
+          transform: rotate(-720deg);
+        }
+
+        100% {
+          transform: rotate(-540deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="/asserts/images/sky_img.jpg"
+        alt="sky image"
+        class="sky_image"
+      />
+
+      <div class="city-road-container">
+        <img
+          src="/asserts/images/city_img.png"
+          alt="city image"
+          class="city_image"
+        />
+        <img
+          src="/asserts/images/road_img.jpg"
+          alt="road image"
+          class="road_image"
+        />
+      </div>
+
+      <div>
+        <img
+          src="/asserts/images/car_img.png"
+          alt="car image"
+          class="car_image"
+        />
+
+        <img
+          src="/asserts/images/wheel_img.png"
+          alt="wheel image"
+          class="wheel_image"
+          id="wheel_one"
+        />
+        <img
+          src="/asserts/images/wheel_img.png"
+          alt="wheel image"
+          class="wheel_image"
+          id="wheel_two"
+        />
+      </div>
+    </div>
+  </body>
+</html>
